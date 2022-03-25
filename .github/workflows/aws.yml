@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: ecr-alpha                         # set this to your Amazon ECR repository name
   ECS_SERVICE: nginx-service                        # set this to your Amazon ECS service name
   ECS_CLUSTER: default                              # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: first-run-task-definition:1  # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: first-run-task-definition    # set this to the path to your Amazon ECS task definition
                                                     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: nginx                             # set this to the name of the container in the
                                                     # containerDefinitions section of your task definition
@@ -86,7 +86,7 @@ jobs:
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: ${{ steps.task-def.outputs.task-definition }}
+        task-definition: ${{ env.ECS_TASK_DEFINITION }}
         service: ${{ env.ECS_SERVICE }}
         cluster: ${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
