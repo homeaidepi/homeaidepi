@@ -1,3 +1,2 @@
-FROM scratch
-COPY hello /
-CMD ["/hello"]
+FROM alpine
+CMD ["echo", "Hello StackOverflow!"]
