@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Vandy@homeaidepi
+- 👋 Hi, I’m Vandy 
 - 👀 I’m interested in helping grow a team, product & community
 - 🌱 I’m currently learning harness.io, terraform & using GitHub to its fullest with Codespaces, Actions, Issues, Discussions, Projects & More
 - 🚀 I’m looking to collaborate with others on unifying DevSecOps and helping to usher Cloud SaaS Paas and IaaS in scalable, multi-tenant, L1 & L2 self service, IaC managed fashioned open & inner source meritocratic ways.
